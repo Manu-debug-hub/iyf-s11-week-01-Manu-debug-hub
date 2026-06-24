@@ -3,7 +3,7 @@
 ## website 1
 ---
 
-1. - paragraph,break, anchor tag
+1. paragraph,break, anchor tag
     
 2. Example.com
 
@@ -21,7 +21,7 @@
 2.inpute:text,email, password,radio,checkbox,submit.
 
 3.
-    <title>Sample Webith In Form</title>
+    <title>Sample  In Form</title>
 </head>
 <body>
 
