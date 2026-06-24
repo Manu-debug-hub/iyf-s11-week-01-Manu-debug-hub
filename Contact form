@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+      <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width">
+              <title>Building my Contact Form</title>
+                </head>
+                  <body>
+                      <form action="/my-handling-form-page" method="post">
+                        <p>
+                            <div>
+                                <label for="username">NAME *:
+
+                                </label>
+                                <input id="username" type:"text"
+                                name="username" required />
+                                <input type="email" id="email"
+                                name="email" required />
+                                <input type="tel" id="tel"
+                                name="tel" required />
+                            </div>
+                        </p>
+                        <section>
+                              <h2>Age Verification</h2>
+                                <fieldset>
+                                    <legend>Confirm your Age</legend>
+                                        <ul>
+                                              <li>
+                                                      <label for="title_1">
+                                                                <input type="radio" id="title_1" name="Age 0 - 18" value="A" />
+                                                                          0 - 18
+                                                                                  </label>
+                                                                                        </li>
+                                                                                              <li>
+                                                                                                      <label for="title_2">
+                                                                                                                <input type="radio" id="title_2" name="Age 18 - 25" value="K" />
+                                                                                                                          18 -25
+                                                                                                                                  </label>
+                                                                                                                                        </li>
+                                                                                                                                              <li>
+                                                                                                                                                      <label for="title_3">
+                                                                                                                                                                <input type="radio" id="title_3" name="Age 25 - 40" value="Q" />
+                                                                                                                                                                          25 - 40
+                                                                                                                                                                                  </label>
+                                                                                                                                                                                        </li>
+                                                                                                                                                                                            </ul>
+                                                                                                                                                                                              </fieldset>
+                                                                                                                                                                                                     </section>
+                                                                                                                                                                                                     <p>
+                                                                                                                                                                                                        <h1>
+                                                                                                                                                                                                            Message:Min 50 characters.
+                                                                                                                                                                                                        </h1>
+                                                                                                                                                                                                        <textarea cols="30" rows="20">
+
+                                                                                                                                                                                                        </textarea>
+                                                                                                                                                                                                     </p>
+                                                                                                                                                                                                     <input type="checkbox" id="Newsletter" name="subscribe" value="yes" checked />
+                                                                                                                                                                                                     <p class="button">
+                                                                                                                                                                                                          <button type="submit">Submit</button>
+                                                                                                                                                                                                          </p></form>
+                                                                                                                                                                                                          
+
+
+
+                      
+                        </body>
+                        </html>
+    
