@@ -13,7 +13,8 @@
   <header>
     <div class="container header-inner">
       <a class="logo" href="index.html">Emmanuel M.</a>
-      <nav aria-label="Main navigation">
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+      <nav id="main-nav" aria-label="Main navigation" aria-hidden="true">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
@@ -26,33 +27,38 @@
 
   <main id="main" class="container" tabindex="-1">
     <h1>Contact</h1>
-    <p class="muted">Prefer email? <a href="mailto:malitokaonabo45@gmail.com">malitokaonabo45@gmail.com</a></p>
+    <p>Get in touch — send a message or email directly.</p>
 
-    <!-- Replace action with your Formspree, Netlify forms, or other endpoint -->
-    <form method="POST" action="https://formspree.io/f/your-id">
-      <label>
-        Your name
-        <input type="text" name="name" required>
-      </label>
+    <section>
+      <h2>Send a message</h2>
+      <form method="POST" action="https://formspree.io/f/your-id">
+        <div style="margin-bottom: 1rem;">
+          <label for="name" style="display: block; margin-bottom: 0.5rem;">Name</label>
+          <input type="text" id="name" name="name" required style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;">
+        </div>
 
-      <label>
-        Your email
-        <input type="email" name="email" required>
-      </label>
+        <div style="margin-bottom: 1rem;">
+          <label for="email" style="display: block; margin-bottom: 0.5rem;">Email</label>
+          <input type="email" id="email" name="email" required style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;">
+        </div>
 
-      <label>
-        Message
-        <textarea name="message" rows="6" required></textarea>
-      </label>
+        <div style="margin-bottom: 1rem;">
+          <label for="message" style="display: block; margin-bottom: 0.5rem;">Message</label>
+          <textarea id="message" name="message" rows="6" required style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;"></textarea>
+        </div>
 
-      <button type="submit">Send message</button>
-    </form>
+        <button type="submit" style="padding: 0.75rem 1.5rem; background: #0a84ff; color: #fff; border: none; border-radius: 4px; cursor: pointer; font-size: 1rem;">Send message</button>
+      </form>
+    </section>
+
+    <section style="margin-top: 2rem;">
+      <h2>Or email directly</h2>
+      <p><a href="mailto:malitokaonabo45@gmail.com">malitokaonabo45@gmail.com</a></p>
+    </section>
   </main>
 
-  <footer>
-    <div class="container">
-      <p>&copy; <span id="year"></span> Emmanuel Mwangangi</p>
-    </div>
+  <footer class="container">
+    <p>&copy; <span id="year"></span> Emmanuel Mwangangi</p>
   </footer>
 
   <script src="assets/js/main.js" defer></script>
