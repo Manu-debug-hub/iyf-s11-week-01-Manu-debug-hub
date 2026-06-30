@@ -1,12 +1,12 @@
-# Week {Number}: {Project Title}
+# Week 1: web foundation 
 
 ## Author
-- **Name:** Your Full Name
-- **GitHub:** [@MaisoriKitayama](https://github.com/MaisoriKitayama)
-- **Date:** Month Day, Year
+- **Name:** Emmanuel Mwangangi 
+- **GitHub:** Manu-debug-hub https://github.com/Manu-debug-hub 
+- **Date:** June, 31, 2006
 
 ## Project Description
-Brief description of what you built and why.
+Web pages for proper understanding of how they work and function.
 
 ## Technologies Used
 - HTML5
@@ -15,9 +15,9 @@ Brief description of what you built and why.
 - (list all technologies)
 
 ## Features
-- Feature 1
-- Feature 2
-- Feature 3
+- dev tools
+- web tools
+- live server
 
 ## How to Run
 1. Clone this repository
@@ -26,13 +26,13 @@ Brief description of what you built and why.
    Run `npm install` then `npm start`
 
 ## Lessons Learned
-What did you learn while building this project?
+Their is always a way forward.
 
 ## Challenges Faced
-What problems did you encounter and how did you solve them?
+Migraines and doubts.
 
 ## Screenshots (optional)
 ![Screenshot description](path/to/screenshot.png)
 
 ## Live Demo (if deployed)
-[View Live Demo](https://your-deployed-url.com)
+View Live Deme https://manu-debug-hub.github.io/iyf-s11-week-01-Manu-debug-hub/index.html
