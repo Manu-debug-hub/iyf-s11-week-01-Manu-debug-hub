@@ -32,7 +32,7 @@ Their is always a way forward.
 Migraines and doubts.
 
 ## Screenshots (optional)
-![Screenshot description](path/to/screenshot.png)
+
 
 ## Live Demo (if deployed)
 View Live Deme https://manu-debug-hub.github.io/iyf-s11-week-01-Manu-debug-hub/index.html
