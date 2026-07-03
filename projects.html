@@ -13,7 +13,8 @@
   <header>
     <div class="container header-inner">
       <a class="logo" href="index.html">Emmanuel M.</a>
-      <nav aria-label="Main navigation">
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+      <nav id="main-nav" aria-label="Main navigation" aria-hidden="true">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
@@ -26,39 +27,43 @@
 
   <main id="main" class="container" tabindex="-1">
     <h1>Projects</h1>
-    <p class="muted">A short intro about the kinds of projects you do.</p>
+    <p class="lead">Here are some projects I've worked on.</p>
 
-    <div class="grid" role="list">
-      <article class="card" id="proj1" role="listitem">
-        <a href="images/project-1.svg" target="_blank" rel="noopener">
-          <img src="images/project-1.svg" alt="Project 1 screenshot">
-          <h3>Project One</h3>
-          <p class="muted">Role • Year • Short summary</p>
+    <div style="display: grid; grid-template-columns: 1fr; gap: 2rem; margin: 2rem 0;">
+      <article style="border: 1px solid #e5e7eb; border-radius: 8px; overflow: hidden;">
+        <a href="images/project-1.svg" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
+          <img src="images/project-1.svg" alt="Project 1" style="width: 100%; height: auto; display: block;">
+          <div style="padding: 1rem;">
+            <h3 style="margin: 0 0 0.5rem 0;">Project One</h3>
+            <p style="margin: 0; color: #6b7280; font-size: 0.9rem;">A sample project showcasing web design.</p>
+          </div>
         </a>
       </article>
 
-      <article class="card" id="proj2" role="listitem">
-        <a href="images/project-2.svg" target="_blank" rel="noopener">
-          <img src="images/project-2.svg" alt="Project 2 screenshot">
-          <h3>Project Two</h3>
-          <p class="muted">Role • Year • Short summary</p>
+      <article style="border: 1px solid #e5e7eb; border-radius: 8px; overflow: hidden;">
+        <a href="images/project-2.svg" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
+          <img src="images/project-2.svg" alt="Project 2" style="width: 100%; height: auto; display: block;">
+          <div style="padding: 1rem;">
+            <h3 style="margin: 0 0 0.5rem 0;">Project Two</h3>
+            <p style="margin: 0; color: #6b7280; font-size: 0.9rem;">Another project demonstrating responsive design.</p>
+          </div>
         </a>
       </article>
 
-      <article class="card" id="proj3" role="listitem">
-        <a href="images/project-3.svg" target="_blank" rel="noopener">
-          <img src="images/project-3.svg" alt="Project 3 screenshot">
-          <h3>Project Three</h3>
-          <p class="muted">Role • Year • Short summary</p>
+      <article style="border: 1px solid #e5e7eb; border-radius: 8px; overflow: hidden;">
+        <a href="images/project-3.svg" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
+          <img src="images/project-3.svg" alt="Project 3" style="width: 100%; height: auto; display: block;">
+          <div style="padding: 1rem;">
+            <h3 style="margin: 0 0 0.5rem 0;">Project Three</h3>
+            <p style="margin: 0; color: #6b7280; font-size: 0.9rem;">Interactive project with modern web standards.</p>
+          </div>
         </a>
       </article>
     </div>
   </main>
 
-  <footer>
-    <div class="container">
-      <p>&copy; <span id="year"></span> Emmanuel Mwangangi</p>
-    </div>
+  <footer class="container">
+    <p>&copy; <span id="year"></span> Emmanuel Mwangangi</p>
   </footer>
 
   <script src="assets/js/main.js" defer></script>
