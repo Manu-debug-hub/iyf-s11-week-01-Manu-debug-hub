@@ -36,3 +36,7 @@ Migraines and doubts.
 
 ## Live Demo (if deployed)
 View Live Deme https://manu-debug-hub.github.io/iyf-s11-week-01-Manu-debug-hub/index.html
+
+## Technical Article — Semantic HTML & Accessibility
+- https://dev.to/emmanuel_bomb17/accessibility-audit-3be6
+
