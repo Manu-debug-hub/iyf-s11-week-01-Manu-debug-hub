@@ -1,24 +1,44 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-* {  font:Montenegrin Gothic One;
-     fontsize:x16;
-     lineheight:1.6;
-     fontcolor: midnightblue;
-   h1: beige blue;
-   h2: beige orange;
-   h3: beige green;
-   h4: beige yellow;
-   h5: beige red;
-   h6: beige violet;
+* {
+    font-family: "Montenegrin Gothic One", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #191970; /* midnightblue */
+    margin: 1em;
+    font-weight: 400;
+}
 
-margin: 1em;
-margin: -3px;
-margin: auto;
+h1 {
+    color: #F5F5DC; /* beige */
+    background-color: blue;
+}
 
-fontweight: 20px;
-   
+h2 {
+    color: #F5F5DC; /* beige */
+    background-color: orange;
+}
+
+h3 {
+    color: #F5F5DC; /* beige */
+    background-color: green;
+}
+
+h4 {
+    color: #F5F5DC; /* beige */
+    background-color: yellow;
+}
+
+h5 {
+    color: #F5F5DC; /* beige */
+    background-color: red;
+}
+
+h6 {
+    color: #F5F5DC; /* beige */
+    background-color: violet;
+}
