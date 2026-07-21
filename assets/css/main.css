@@ -5,10 +5,10 @@
   --bg:#fff;--text:#222;--accent:#1a73e8;--muted:#666;
 }
 *{box-sizing:border-box}
-body{font-family: 'Black Ops One',Arial;line-height:1.6;margin:0;color:var(--text);background:var(--bg)}
-.container{max-width:880px;margin:0 auto;padding:1rem}
+body{font-family: 'Black Ops One',Arial;line-height:1.6;margin:0;color:var(blue);background:var(--bg)}
+.container{max-width:880px;margin:0 auto;padding:16rem}
 .header-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem}
-.logo{font-weight:700;text-decoration:none;color:var(--text)}
+.logo{font-weight:700;text-decoration:none;color:var(blue)}
 .nav-toggle{display:none;padding:.5rem 1rem;border:1px solid #ddd;background:transparent;border-radius:4px}
 nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1rem}
 nav a{text-decoration:none;color:var(--text)}
