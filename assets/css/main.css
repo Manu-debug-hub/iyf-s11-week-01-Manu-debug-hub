@@ -1,29 +1,32 @@
-/* main.css - minimal styles to restore site layout */
+/* main.css - */
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 
-:root{
-  --bg:#fff;--text:#222;--accent:#1a73e8;--muted:#666;
+
 }
 *{box-sizing:border-box}
-body{font-family: 'Black Ops One',Arial;line-height:1.6;margin:0;color:var(blue);background:var(--bg)}
-.container{max-width:880px;margin:0 auto;padding:16rem}
-.header-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem}
-.logo{font-weight:700;text-decoration:none;color:var(blue)}
-.nav-toggle{display:none;padding:.5rem 1rem;border:1px solid #ddd;background:transparent;border-radius:4px}
-nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1rem}
-nav a{text-decoration:none;color:var(--text)}
-.lead{color:var(--muted);font-size:1.05rem}
-footer{padding:2rem 0;color:var(--muted);font-size:.95rem}
-.skip{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
-.skip:focus{position:static;left:auto;width:auto;height:auto;padding:.5rem;background:#000;color:#fff}
-figure img{border-radius:8px}
-@media (max-width:640px){
-  .nav-toggle{display:block}
-  nav{display:none}
-  nav[aria-hidden="false"]{display:block}
-  nav ul{flex-direction:column}
-}
 
 h1#heading {
   color: rebeccapurple;
             }
+
+* {
+    margin: 100;
+    padding: 100;
+    box-sizing: border-box;
+}
+
+* {
+  lineheight = 1.6 px
+} 
+
+* {
+  font color: white
+}
+
+{
+  font size:h1:h6, different sizes;
+
+}
+  {
+  font weight:30px;
+  }
