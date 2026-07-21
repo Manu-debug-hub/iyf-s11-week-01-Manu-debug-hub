@@ -1,4 +1,6 @@
 /* main.css - minimal styles to restore site layout */
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
 :root{
   --bg:#fff;--text:#222;--accent:#1a73e8;--muted:#666;
 }
