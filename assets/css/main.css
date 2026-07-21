@@ -1,4 +1,4 @@
-/* main.css - minimal styles to restore site layout */
+/* main.css - minimal styles to restore site layout (cleaned & corrected) */
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 
 :root{
@@ -6,9 +6,20 @@
   --text: #222;
   --accent: #1a73e8;
   --muted: #666;
+  --max-width: 880px;
+  --radius: 8px;
+  --focus: rgba(26,115,232,0.45);
 }
 
-* { box-sizing: border-box; }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
 
 body {
   font-family: 'Black Ops One', Arial, sans-serif;
@@ -16,10 +27,13 @@ body {
   margin: 0;
   color: var(--text);
   background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
 }
 
 .container {
-  max-width: 880px;
+  max-width: var(--max-width);
   margin: 0 auto;
   padding: 1.6rem;
 }
@@ -43,8 +57,11 @@ body {
   border: 1px solid #ddd;
   background: transparent;
   border-radius: 4px;
+  cursor: pointer;
+  font: inherit;
 }
 
+/* Navigation */
 nav ul {
   list-style: none;
   margin: 0;
@@ -53,12 +70,34 @@ nav ul {
   gap: 1rem;
 }
 
-nav a { text-decoration: none; color: var(--text); }
+nav a {
+  text-decoration: none;
+  color: var(--text);
+}
 
-.lead { color: var(--muted); font-size: 1.05rem; }
+/* Visible focus styles for keyboard users */
+a:focus,
+button:focus,
+.nav-toggle:focus {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
 
-footer { padding: 2rem 0; color: var(--muted); font-size: .95rem; }
+/* Intro / lead text */
+.lead {
+  color: var(--muted);
+  font-size: 1.05rem;
+}
 
+/* Footer */
+footer {
+  padding: 2rem 0;
+  color: var(--muted);
+  font-size: .95rem;
+}
+
+/* Skip link (accessible, visually hidden until focused) */
 .skip {
   position: absolute;
   left: -9999px;
@@ -66,20 +105,36 @@ footer { padding: 2rem 0; color: var(--muted); font-size: .95rem; }
   width: 1px;
   height: 1px;
   overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
 }
 
-.skip:focus {
-  position: static;
-  left: auto;
+.skip:focus,
+.skip:active,
+.skip:focus-visible {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
   width: auto;
   height: auto;
   padding: .5rem;
   background: #000;
   color: #fff;
+  z-index: 1000;
+  border-radius: 4px;
+  clip: auto;
+  white-space: normal;
 }
 
-figure img { border-radius: 8px; max-width: 100%; height: auto; }
+/* Images / figures */
+figure img {
+  display: block;
+  border-radius: var(--radius);
+  max-width: 100%;
+  height: auto;
+}
 
+/* Responsive navigation behaviour */
 @media (max-width: 640px) {
   .nav-toggle { display: block; }
   nav { display: none; }
@@ -87,7 +142,7 @@ figure img { border-radius: 8px; max-width: 100%; height: auto; }
   nav ul { flex-direction: column; }
 }
 
-/* User suggestion preserved exactly as provided */
-h1#heading {
+/* Heading with provided color (use ID selector only) */
+#heading {
   color: rebeccapurple;
-            }
+}
